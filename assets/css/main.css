@@ -125,6 +125,7 @@
   cursor: default;
   transform-origin: calc(100% - 20px) top;
   animation: headerNotifyGrowth 0.2s ease-in;
+  will-change: opacity, transform;
   display: none;
 }
 
