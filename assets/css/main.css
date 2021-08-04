@@ -128,6 +128,25 @@
   display: none;
 }
 
+.header__notify::before {
+  content: '';
+  border-width: 20px 30px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+  position: absolute;
+  right: 10px;
+  top: -30px
+}
+
+.header__notify::after {
+  content: '';
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  top: -10px;
+}
+
 .header__navbar-item-has-notify:hover .header__notify {
   display: block;
 }
@@ -143,7 +162,8 @@
   }
 }
 
-.header__notify::before {
+
+/* .header__notify::before {
   display: block;
   content: "";
   width: 100%;
@@ -151,7 +171,7 @@
   position: absolute;
   left: 0;
   top: -10px;
-}
+} */
 
 .header__notify-header {
   height: 40px;
