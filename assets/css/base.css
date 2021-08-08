@@ -4,6 +4,7 @@
   --white-color: #fff;
   --black-color: #000;
   --text-color: #333;
+  --border-color: #dbdbdb;
 }
 
 *  {
@@ -71,4 +72,19 @@ html {
   z-index: 99;
   position: relative;
   border-radius: 5px;
+}
+
+/* Button style */
+.btn {
+  min-width: 142px;
+  height: 36px;
+  border: none;
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: 1.4rem;
+}
+
+.btn.btn--primary {
+  color: var(--white-color);
+  background-color: var(--primary-color);
 }
