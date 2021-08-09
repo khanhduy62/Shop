@@ -72,6 +72,7 @@ html {
   z-index: 99;
   position: relative;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 /* Button style */
@@ -82,9 +83,32 @@ html {
   text-decoration: none;
   border-radius: 2px;
   font-size: 1.4rem;
+  outline: none;
+  cursor: pointer;
+  color: var(--text-color);
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.btn.btn--size-s {
+  height: 30px;
+  font-size: 12px;
+  padding: 0 6px;
+}
+
+.btn.btn--normal:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .btn.btn--primary {
   color: var(--white-color);
   background-color: var(--primary-color);
+}
+
+.btn.btn--disabled {
+  cursor: default;
+  filter: brightness(80%);
 }
